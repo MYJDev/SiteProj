@@ -1,0 +1,73 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<title>Envie seu currículo</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link href="css/popup-box.css" rel="stylesheet" type="text/css" media="all" />
+	<link href="css/style.css" rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lato" />
+	
+    
+
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+	
+</head>
+
+<body>
+        
+		<section id="hire">
+		    <h1>Trabalhe Conosco</h1>
+            <center>
+			<form method="POST" id="form" class="form" >
+				<div class="field name-box">
+				    <input type="text" id="nome" name="nome" placeholder="Quem é você ?" />
+                    <label for="nome">Nome</label>
+                    <span class="ss-icon">check</span>
+				</div>
+				<div class="field email-box">
+				    <input type="text" id="email" name="email" placeholder="Seu email"    />
+                    <label for="email">Email</label>
+                    <span class="ss-icon">check</span>
+				</div>
+				<div class="field fone-box">
+				    <input type="text" id="fone" name="fone" placeholder="Seu telefone"  maxlength="15"/>
+                    <label for="fone">Fone</label>
+                    <span class="ss-icon">check</span>
+				</div>
+				<div class="field cidade-box">
+				    <input type="text" id="cidade" name="cidade" placeholder="Sua cidade" />
+                    <label for="cidade">Cidade</label>
+                    <span class="ss-icon">check</span>
+				</div>
+				<div class="field estado-box">
+				    <input type="text" id="estado" name="estado" placeholder="Seu estado" />
+                    <label for="estado">Estado</label>
+                    <span class="ss-icon">check</span>
+				</div>
+				<div class="field msg-box">
+                    <textarea id="msg" rows="4" placeholder="Diga mais sobre você aqui..." ></textarea>
+                    <label for="msg">Obs</label>
+                    <span class="ss-icon">check</span>
+                </div>
+                <br>
+                <label class="fakeInputLabel" for="file">Carregar Curriculo</label>
+                <input id="file" name="file" type="file" name="fileData" accept=".doc,.pdf"/>
+                
+				<br>
+				<input type="submit" value="Enviar currículo" id="btnPostFile" name="btnPostFile">
+                
+			</form>
+                </center>
+		  </section>
+    <script src="http://jqueryvalidation.org/files/dist/jquery.validate.js"></script>     
+	<script
+  	src="https://code.jquery.com/jquery-2.1.4.min.js"
+  	integrity="sha256-8WqyJLuWKRBVhxXIL1jBDD7SDxU936oZkCnxQbWwJVw="
+  	crossorigin="anonymous"></script>
+	<script src="js/app.js"></script>
+    <script src="js/mascara.js"></script>
+    <script src="js/valida.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</body>
+</html>
