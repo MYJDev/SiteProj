@@ -9,28 +9,28 @@ namespace FinalApi.Models.DataModels
     [Table("Curriculo")]
     public partial class Curriculo
     {
-        public int id { get; set; }
+        public int Id { get; set; }
 
         [Required]
-        public string city { get; set; }
+        public string City { get; set; }
 
         
-        public Guid id_file { get; set; }
+        public Guid IdFile { get; set; }
 
-        public byte[] file { get; set; }
-
-        [Required]
-        public string email { get; set; }
+        public byte[] File { get; set; }
 
         [Required]
-        public string state { get; set; }
-
-        public string text { get; set; }
+        public string Email { get; set; }
 
         [Required]
-        public string name { get; set; }
+        public string State { get; set; }
+
+        public string Text { get; set; }
 
         [Required]
-        public string phone { get; set; }
+        public string Name { get; set; }
+
+        [Required]
+        public string Phone { get; set; }
     }
 }

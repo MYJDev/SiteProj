@@ -47,7 +47,7 @@ namespace FinalApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            if (id != curriculo.id)
+            if (id != curriculo.Id)
             {
                 return BadRequest();
             }
@@ -103,11 +103,11 @@ namespace FinalApi.Controllers
             }
 
             
-            curriculos.file = fileData;
+            curriculos.File = fileData;
 
             Guid g;
             g = Guid.NewGuid();
-            curriculos.id_file = g;
+            curriculos.IdFile = g;
 
             db.Curriculo.Add(curriculos);
             db.SaveChanges();
@@ -142,7 +142,7 @@ namespace FinalApi.Controllers
 
         private bool CurriculoExists(int id)
         {
-            return db.Curriculo.Count(e => e.id == id) > 0;
+            return db.Curriculo.Count(e => e.Id == id) > 0;
         }
     }
 }
